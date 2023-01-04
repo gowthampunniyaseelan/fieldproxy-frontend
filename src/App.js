@@ -14,7 +14,7 @@ function App() {
     <Router>
     <Routes>
     <Route path="/" element={<Signup/>}/>
-    {window.localStorage.getItem("password") ? <Route path="https://fieldproxy-assignment.netlify.app/dashboard" element={<DashBoard/>}/> : ""}
+    {window.localStorage.getItem("password") ? <Route path="/dashboard" element={<DashBoard/>}/> : ""}
     </Routes>
     </Router>
     </>
